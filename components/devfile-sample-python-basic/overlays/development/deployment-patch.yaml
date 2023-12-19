@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/afred-tenant/devfile-sample-python-basic/devfile-sample-python-basic@sha256:c4a55178ba98133bea384bafdc5b668fa250266bd80384596367bdd0ce7586c1
+        name: my-python
+        resources: {}
+status: {}
